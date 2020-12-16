@@ -1,0 +1,54 @@
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <style>
+        @font-face {
+            font-family: myFont;
+            src: url(res/ARCADECLASSIC.TTF);
+        }
+
+        body {
+            font-family: myFont, serif;
+            background: #000;
+            font-size: 20px;
+        }
+
+        #container {
+            background: #B9C500;
+            margin: auto;
+            padding: 20px;
+        }
+
+        #frame {
+            border: 3px #333 solid;
+        }
+
+    </style>
+</head>
+<body>
+
+<div style="display: none">
+    <img id="imgHorizontal" src="res/horizontal.png">
+    <img id="imgVertical" src="res/vertical.png">
+    <img id="imgRightUp" src="res/right_up.png">
+    <img id="imgLeftDown" src="res/left_down.png">
+    <img id="imgFood" src="res/food.png">
+</div>
+
+<div id="container">
+    <div id="msg" style="float: left">
+        press SPACE to start
+    </div>
+    <div style="float: right">
+        Score: <span id="score">0</span>
+    </div>
+    <div id="frame" style="clear: both">
+        <canvas id="canvas"></canvas>
+    </div>
+</div>
+
+<script src="main.js"></script>
+
+</body>
+</html>
